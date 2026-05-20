@@ -10,6 +10,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Custom School Dashboard Colors */
+  --color-lamaSky: #C3EBFA;
+  --color-lamaSkyLight: #EDF9FD;
+  --color-lamaPurple: #CFE2FE;
+  --color-lamaPurpleLight: #F1F0FE;
+  --color-lamaYellow: #FAE27C;
+  --color-lamaYellowLight: #FEFCE8;
 }
 
 @media (prefers-color-scheme: dark) {
