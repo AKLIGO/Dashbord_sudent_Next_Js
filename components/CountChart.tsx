@@ -1,5 +1,8 @@
+"use client"
+
 import Image from 'next/image';
 import { RadialBarChart, RadialBar, Legend, Tooltip, ResponsiveContainer } from 'recharts';
+
 // import { RechartsDevtools } from '@recharts/devtools';
 
 // #region Sample data
@@ -40,10 +43,11 @@ const CountChart = () => {
             </div>
             {/*CHART*/}
             <div className='relative w-full h-[75%]'>
-                <ResponsiveContainer width="100%" height="100%">
+                <ResponsiveContainer width="100%" height={300}>
                     <RadialBarChart
                         cx="50%" cy="50%" innerRadius="40%" outerRadius="100%"
-                        barSize={32} data={data}>
+                        barSize={32} data={data}
+                        startAngle={90} endAngle={-270}>
                         <RadialBar
 
                             // label={{
@@ -58,7 +62,7 @@ const CountChart = () => {
                         {/* <Legend layout="vertical" verticalAlign="middle" /> */}
                     </RadialBarChart>
                 </ResponsiveContainer>
-                <Image src="/malefemale.png" alt="chart" width={50} height={50} className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
+                <Image src="/malefemale.png" alt="chart" width={50} height={50} className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' loading="eager" />
             </div>
             {/*NOTTOM */}
             <div className='flex justify-center gap-16'>

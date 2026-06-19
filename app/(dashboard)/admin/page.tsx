@@ -1,6 +1,8 @@
 "use client"
 
-import CountChart from "@/components/CountChart";
+import dynamic from "next/dynamic";
+const AttendChart = dynamic(() => import("@/components/AttendChart"), { ssr: false });
+const CountChart = dynamic(() => import("@/components/CountChart"), { ssr: false });
 import UserCard from "@/components/UserCard";
 
 const admin = () => {
@@ -25,7 +27,9 @@ const admin = () => {
                     </div>
 
                     {/* ATTENDANCE CHART */}
-                    <div className="w-full lg:w-2/3 h-[450px]"></div>
+                    <div className="w-full lg:w-2/3 h-[450px]">
+                        <AttendChart />
+                    </div>
 
                 </div>
 
