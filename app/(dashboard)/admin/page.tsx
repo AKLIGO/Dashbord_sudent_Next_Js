@@ -4,6 +4,8 @@ import dynamic from "next/dynamic";
 const AttendChart = dynamic(() => import("@/components/AttendChart"), { ssr: false });
 const CountChart = dynamic(() => import("@/components/CountChart"), { ssr: false });
 import UserCard from "@/components/UserCard";
+import FinanceChart from "@/components/FinanceChart";
+import EventCalendar from "@/components/EventCalendar";
 
 const admin = () => {
     return (
@@ -34,12 +36,16 @@ const admin = () => {
                 </div>
 
                 {/* BOTTOM CHARTS */}
-                <div className=""></div>
+                <div className="w-ful h-[500px]">
+                    <FinanceChart />
+                </div>
 
 
             </div>
             {/*right side  */}
-            <div className="w-full lg:w-1/3 ">r</div>
+            <div className="w-full lg:w-1/3 flex flex-col gap-8">
+                <EventCalendar />
+            </div>
         </div>
     )
 }
