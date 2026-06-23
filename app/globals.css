@@ -47,3 +47,142 @@ body {
   background-color: #C3EBFA !important;
   color: black !important;
 }
+
+/* Calendar Toolbar Styling */
+.rbc-toolbar {
+  margin-bottom: 15px !important;
+  font-family: var(--font-sans), sans-serif;
+}
+
+.rbc-btn-group:first-child {
+  display: none !important;
+}
+
+.rbc-toolbar-label {
+  text-align: right !important;
+  padding: 0px 20px !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  color: #374151 !important;
+}
+
+.rbc-btn-group:last-child {
+  font-size: 13px !important;
+}
+
+.rbc-btn-group:last-child button {
+  border: 1px solid #e5e7eb !important;
+  background-color: #ffffff !important;
+  color: #374151 !important;
+  margin-left: 4px !important;
+  border-radius: 6px !important;
+  padding: 6px 12px !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+}
+
+.rbc-btn-group:last-child button:hover {
+  background-color: #f3f4f6 !important;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: var(--color-lamaSkyLight) !important;
+  color: #111 !important;
+  border-color: var(--color-lamaSky) !important;
+  box-shadow: none !important;
+}
+
+/* Time Grid & Borders */
+.rbc-time-view {
+  border: 1px solid #e5e7eb !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  background-color: white !important;
+}
+
+.rbc-time-header {
+  border-bottom: 1px solid #e5e7eb !important;
+  background-color: #fdfdfd !important;
+}
+
+.rbc-header {
+  padding: 12px 0 !important;
+  font-weight: 600 !important;
+  color: #4b5563 !important;
+  border-left: 1px solid #e5e7eb !important;
+  border-bottom: none !important;
+}
+
+.rbc-time-content {
+  border-top: none !important;
+}
+
+.rbc-day-slot .rbc-time-slot {
+  border-top: 1px solid #f9fafb !important;
+}
+
+.rbc-timeslot-group {
+  border-bottom: 1px solid #e5e7eb !important;
+  background-color: #ffffff !important;
+}
+
+.rbc-time-gutr.rbc-time-column {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: #9ca3af !important;
+  background-color: #fdfdfd !important;
+  border-right: 1px solid #e5e7eb !important;
+}
+
+.rbc-time-gutr .rbc-timeslot-group {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 10px !important;
+}
+
+.rbc-day-slot {
+  font-size: 14px !important;
+}
+
+/* Events Styling */
+.rbc-event {
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 8px !important;
+  color: #1f2937 !important;
+  padding: 8px !important;
+  margin-top: 1px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  width: 98% !important;
+  margin-left: 1% !important;
+}
+
+.rbc-event:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08) !important;
+  z-index: 5 !important;
+}
+
+.rbc-event-label {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+  margin-bottom: 3px !important;
+}
+
+/* Premium Cycling Event Colors */
+.rbc-event:nth-child(3n + 1) {
+  background-color: var(--color-lamaSkyLight) !important;
+  border-left: 4px solid var(--color-lamaSky) !important;
+}
+
+.rbc-event:nth-child(3n + 2) {
+  background-color: var(--color-lamaPurpleLight) !important;
+  border-left: 4px solid var(--color-lamaPurple) !important;
+}
+
+.rbc-event:nth-child(3n + 3) {
+  background-color: var(--color-lamaYellowLight) !important;
+  border-left: 4px solid var(--color-lamaYellow) !important;
+}
