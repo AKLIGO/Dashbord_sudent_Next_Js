@@ -1,4 +1,11 @@
-const Table = ({ columns }: { columns: { header: string, accessor: string, className?: string }[] }) => {
+const Table = ({ columns,
+    data,
+    renderRow,
+}: {
+    columns: { header: string, accessor: string, className?: string }[]
+    data: any[]
+    renderRow: (item: any) => React.ReactNode
+}) => {
     return (
         <table className="w-full mt-4">
             <thead>
@@ -8,6 +15,11 @@ const Table = ({ columns }: { columns: { header: string, accessor: string, class
                     ))}
                 </tr>
             </thead>
+            <tbody>
+                {
+                    data.map((item) => renderRow(item))
+                }
+            </tbody>
         </table>
     )
 }
